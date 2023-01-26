@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .border-hover{
+        @apply border border-transparent rounded-sm hover:border-white cursor-pointer
+    }
+
+    .outline-custom{
+        outline: none;
+        box-shadow: 0 0 0 2.5px rgb(255, 153, 0);
+        @apply rounded
+    }
+
+    .highlight{
+        @apply border-b-2 border-transparent py-1 px-3  hover:text-orange-650 hover:border-orange-650 cursor-pointer inline-block text-xs h-full
+    }
+
+    .link-custom{
+        @apply text-blue-600 underline hover:text-orange-650 px-1 border-l border-black
+    }
+
+    .link-custom-2{
+        @apply border-r border-gray-400 px-2 hover:underline
+    }
+}
